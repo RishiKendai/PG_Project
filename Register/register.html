@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign up</title>
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins&family=Roboto+Slab&display=swap"
+            rel="stylesheet">
+        <!-- Ion Icons -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <!-- CSS Style -->
+        <link rel="stylesheet" href="register.css">
+        <link rel="stylesheet" href="/common.css">
+        <!-- JS -->
+        <script defer src="./register.js"></script>
+    </head>
+
+    <body>
+        <form action="" class="form_sign_up">
+            <header>
+                <h5>Create Account</h5>
+            </header>
+            <section>
+                <div class="input_field">
+                    <div class="text_div">
+                        <input type="text" name="userName" class='text_div_input' required />
+                        <label class='text_div_label'>username</label>
+                    </div>
+
+                    <div class="text_div">
+                        <input type="password" name="password" class='text_div_input' required />
+                        <label class='text_div_label'>password</label>
+                        <ion-icon class='eye off' name="eye-off-outline"></ion-icon>
+                        <ion-icon class='eye on' name="eye-outline"></ion-icon>
+                    </div>
+
+                    <div class="text_div">
+                        <input type="password" name="confirmPassword" class='text_div_input' required />
+                        <label class='text_div_label'>Confirm password</label>
+                        <ion-icon class='eye off' name="eye-off-outline"></ion-icon>
+                        <ion-icon class='eye on' name="eye-outline"></ion-icon>
+
+                    </div>
+
+                    <div class="text_div">
+                        <input type="email" name="mail_id" class='text_div_input' required />
+                        <label class='text_div_label'>Mail ID</label>
+                    </div>
+
+                    <div class="text_div">
+                        <input type="text" name="Mobile_number" class='text_div_input' required />
+                        <label class='text_div_label'>Mobile Number</label>
+                    </div>
+                </div>
+            </section>
+
+            <div class="form_footer">
+                <button class='form_footer_sign_up' disabled='true'>Create Account</button>
+
+                <div class="error_div"></div>
+
+                <div class="middle_line">
+                    <div class="line"></div>
+                    <div class="text">or</div>
+                    <div class="line"></div>
+                </div>
+                <div class="form_footer_sign_in">
+                    <p>have an account?</p>
+                    <a href="/Login/login.html">Sign in</a>
+                </div>
+            </div>
+        </form>
+
+    </body>
+
+</html>

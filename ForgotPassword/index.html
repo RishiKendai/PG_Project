@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reset Password</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- IonIcons -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <form action="">
+            <header>
+                    <!-- <i class="fa-solid fa-lock fa-4x"></i> -->
+                    <ion-icon class='lock' name="lock-closed-outline"></ion-icon>
+                <h5>Trouble Logging In?</h5>
+            </header>
+            <main>
+                <p>
+                    Enter your email, phone, or username and we'll send you a link to get back into your account.
+                </p>
+                <div class="input_field">
+                    <div class="text_div">
+                        <input type="text" name="userName" id="" class='text_div_input' required />
+                        <label for="" class='text_div_label'>email, phone</label>
+                    </div>
+                </div>
+                <button class='form_send_link'>Send Login Link</button>
+
+                <div class="middle_line">
+                    <div class="line"></div>
+                    <div class="text">or</div>
+                    <div class="line"></div>
+                </div>
+                <a href="/Register/register.html" class="create_account">Create account</a>
+            </main>
+            <a href="/Login/login.html" class="back_login">Back to Login</a>
+        </form>
+    </body>
+
+</html>

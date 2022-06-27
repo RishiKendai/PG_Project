@@ -1,0 +1,44 @@
+/* Password */
+input[name='password'] {
+  padding-right: 35px;
+}
+.eye {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+ion-icon[name='eye-outline'] {
+  display: none;
+}
+ion-icon[name='eye-off-outline'].hide {
+  display: none;
+}
+ion-icon[name='eye-outline'].show{
+  display: block;
+
+}
+ion-icon:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+button[disabled] {
+  background-color: rgb(0 0 255 / 28%);
+  color: #dfdfdfdf;
+  cursor: not-allowed;
+}
+
+
+/* Error Message */
+.error_div {
+  width: 85%;
+  font: 1rem system-ui, 'Segoe UI', sans-serif;
+  margin: 0 auto 0.5em;
+  text-align: center;
+  color: rgb(255 0 0 / 55%);
+}
