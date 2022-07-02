@@ -16,6 +16,7 @@
         <!-- CSS Style -->
         <link rel="stylesheet" href="register.css">
         <link rel="stylesheet" href="/common.css">
+        <link rel="stylesheet" href="/dropDown.css">
         <!-- JS -->
         <script defer src="./register.js"></script>
     </head>
@@ -44,11 +45,21 @@
                         <label class='text_div_label'>Confirm password</label>
                         <ion-icon class='eye off' name="eye-off-outline"></ion-icon>
                         <ion-icon class='eye on' name="eye-outline"></ion-icon>
+                    </div>
 
+                    <div class="dropdown">
+                        <input class='dropdownText' type="text" name="" id="" readonly class='select'
+                            placeholder='Select your Department'>
+                        <div class="options_list">
+                            <div class='option' onclick="value(this, 'dropdownText')">MCA</div>
+                            <div class='option' onclick="value(this, 'dropdownText')">MBA</div>
+                            <div class='option' onclick="value(this, 'dropdownText')">CSE</div>
+                            <div class='option' onclick="value(this, 'dropdownText')">ECE</div>
+                        </div>
                     </div>
 
                     <div class="text_div">
-                        <input type="email" name="mail_id" class='text_div_input' required />
+                        <input type="text" name="mail_id" class='text_div_input' required />
                         <label class='text_div_label'>Mail ID</label>
                     </div>
 

@@ -1,5 +1,6 @@
 /* Password */
-input[name='password'] {
+input[name='password'],
+input[name='confirmPassword'] {
   padding-right: 35px;
 }
 .eye {
@@ -16,9 +17,8 @@ ion-icon[name='eye-outline'] {
 ion-icon[name='eye-off-outline'].hide {
   display: none;
 }
-ion-icon[name='eye-outline'].show{
+ion-icon[name='eye-outline'].show {
   display: block;
-
 }
 ion-icon:before {
   content: '';
@@ -32,7 +32,6 @@ button[disabled] {
   color: #dfdfdfdf;
   cursor: not-allowed;
 }
-
 
 /* Error Message */
 .error_div {
